@@ -25,7 +25,7 @@
       "layer": [
         {
           "data": {
-            "url": "https://raw.githubusercontent.com/arethasantosa/Assignment-2/main/statemelb.json",
+            "url": "",
             "format": {"type": "topojson", "feature": "states"}
           },
           "transform": [
@@ -51,7 +51,7 @@
               "lookup": "States",
               "from": {
                 "data": {
-                  "url": "https://raw.githubusercontent.com/asil0016/FIT-3179-TEST/Homework-Week-10/map_visualisation/js/map_states.topojson",
+                  "url": "https://raw.githubusercontent.com/arethasantosa/Draft/main/statemelb.json",
                   "format": {
                     "type": "topojson",
                     "feature": "states"
