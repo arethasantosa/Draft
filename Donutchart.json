@@ -3,7 +3,7 @@
   "description": "A simple donut chart with embedded data.",
   "title": "Main Reason for Participating in Formal Study (2021)",
   "width": "container",
-"height": 200,
+"height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/arethasantosa/Assignment-2/main/Main%20reason%20for%20participating%20in%20formal%20study%20over%20the%20past%2012%20months(a).csv"
   },

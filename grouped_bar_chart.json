@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Engagement In Work or Study By Age Or Sex",
   "width": "container",
-  "height": 300,
+  "height": 400,
   "data": {
     "values": [
       {"category":"Males 15-24", "group": "Fully engaged", "value":81.2},
