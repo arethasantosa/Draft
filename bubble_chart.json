@@ -1,0 +1,58 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 400,
+    "title": "Number of Student Enrolled",
+    "data": {
+    "url": "https://raw.githubusercontent.com/arethasantosa/Assignment-2/main/Population%20Enrolled%20.csv"
+    },
+    "params": [
+      {
+        "name": "state_highlight",
+        "select": {"type": "point", "fields": ["State"]},
+        "bind": "legend"
+      },
+    ],
+    "mark": "circle",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "nominal"
+        },
+        "y": {
+          "field": "Population",
+          "type": "quantitative",
+          "title": "Population Number"
+          },
+        "color": {
+          "field": "State",
+          "type": "nominal",
+          "scale": {"scheme": "set2"}
+          },
+        "opacity": {
+          "condition": {"param": "state_highlight", "value": 1},
+          "value": 0.05
+        },
+        "size": {
+          "field": "Enrolled",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [100, 500, 1000, 1500, 4500],
+            "range": [100, 500, 750, 1300, 1500,3000]
+          },
+          "legend": {"title": "Number of Student Enrolled ('000)"}
+          },
+          "tooltip": [
+            {"field": "Enrolled", "title":"Number of Student Enrolled('000)", "type": "quantitative"},
+            {"field": "Population", "title": "Total Population: ('000)", "type": "quantitative"}
+          ]
+        },
+      "config": {
+        "background":"#D4E1EE",
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
+      }}
