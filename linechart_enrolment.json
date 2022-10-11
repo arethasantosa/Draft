@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Student Enrolment",
-  "width": "container",
-  "height": 400,
+  "width": 500,
+  "height":300,
   "description": "School type of student enrolment",
   "data": {"url": "https://raw.githubusercontent.com/arethasantosa/Draft/main/tudent%20enrolments%20by%20school%20affiliation%20Australia%2C%202017%20to%202021.csv"},
   "params": [
