@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple donut chart with embedded data.",
-  "title": "Main Reason for Participating in Formal Study (2021)",
+  "title": "Main Reason for Participating In Formal Study (2021)",
   "width": 500,
   "height":300,
   "data": {
@@ -26,7 +26,7 @@
       }
 }
   ],"config": {
-    "background":"#D4E1EE",
+    "background":"#5a4d59",
     "style": {
       "cell": {
         "stroke": "transparent"
