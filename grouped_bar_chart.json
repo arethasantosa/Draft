@@ -30,13 +30,5 @@
     "x": {"field": "category", "title": "Category"},
     "y": {"field": "value", "type": "quantitative", "title": "Value"},
     "xOffset": {"field": "group"},
-    "color": {"field": "group","scale": {"scheme": "Orangered"}}},
-    "config": {
-    "background":"#D4E1EE",
-    "style": {
-      "cell": {
-        "stroke": "transparent"
-      }
-    }
-  }
+    "color": {"field": "group","scale": {"scheme": "Orangered"}}}
   }
