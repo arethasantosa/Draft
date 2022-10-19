@@ -25,25 +25,6 @@
       "layer": [
         {
           "data": {
-            "url": "",
-            "format": {"type": "topojson", "feature": "states"}
-          },
-          "transform": [
-            {
-              "calculate": "'Data is not available in ' + datum.properties.STATE_NAME",
-              "as": "note"
-            }
-          ],
-          "mark": {
-            "type": "geoshape",
-            "fill": "#ddd",
-            "stroke": "white",
-            "strokeWidth": 1
-          },
-          "encoding": {"tooltip": {"field": "note"}}
-        },
-        {
-          "data": {
             "url": "https://raw.githubusercontent.com/arethasantosa/Assignment-2/main/Student%20enrolment%20by%20state.csv"
           },
           "transform": [
