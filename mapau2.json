@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Normalised Number of Student by State",
+    "width": 500,
+    "height":300,
+        "params": [
+          {
+            "name": "select_year",
+            "value": 2010,
+            "bind": {
+              "input": "range",
+              "min": 2010,
+              "max": 2020,
+              "step": 1,
+              "name": "Select Year"
+            }
+          }
+        ],
+        "projection": {"type": "equirectangular"},
+        "layer": [
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/arethasantosa/Draft/main/Population%20Enrolled%20.csv"
+            },
+            "transform": [
+              {
+                "lookup": "State",
+                "from": {
+                  "data": {
+                    "url": "https://raw.githubusercontent.com/arethasantosa/Draft/main/statemelb.json",
+                    "format": {
+                      "type": "topojson",
+                      "feature": "states"
+                    }
+              },
+                  "key": "properties.STATE_NAME"
+                },
+                "as": "geo"
+              },
+            {"filter": "datum.Year == select_year"}
+            ],
+            "mark": {"type": "geoshape", "stroke": "#64473C", "strokeWidth": 0.5},
+            "encoding": {
+              "shape": {"field": "geo", "type": "geojson"},
+              "color": {
+                "field": "Normalised",
+                "type": "quantitative",
+                "scale": {"scheme": "Reds"},
+                "legend": null},
+            "tooltip": [
+              {"field": "State", "type": "nominal", "title": "State"},
+              {"field": "Normalised", "type": "quantitative", "title": "Total number of student(%)"}
+            ]
+        }}
+      ],
+    "config": {
+          "background":"#fce6ce",
+          "style": {
+            "cell": {
+              "stroke": "transparent"
+            }
+          },
+          "axis": {"grid": false},
+          "font": "Goudy Old Style"
+        }
+    }

@@ -1,0 +1,50 @@
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 185,
+    "title": "Engagement in Young Australians",
+    "data": {
+      "values": [
+        {"country": "Australia", "animal": "Engage"},
+        {"country": "Australia", "animal": "Engage"},
+        {"country": "Australia", "animal": "Engage"},
+        {"country": "Australia", "animal": "Engage"},
+        {"country": "Australia", "animal": "Engage"},
+        {"country": "Australia", "animal": "Engage"},
+        {"country": "Australia", "animal": "Engage"},
+        {"country": "Australia", "animal": "Engage"},
+        {"country": "Australia", "animal": "Engage"},
+        {"country": "Australia", "animal": "Not-Engage"},
+        
+      ]
+    },
+    "transform": [
+      {
+        "calculate": "{'Engage': '👨🏽‍💻', 'Not-Engage': '🙅🏽'}[datum.animal]",
+        "as": "emoji"
+      },
+      {"window": [{"op": "rank", "as": "rank"}], "groupby": ["country", "animal"]}
+    ],
+    "mark": {"type": "text", "baseline": "middle"},
+    "encoding": {
+      "x": {"field": "rank", "type": "ordinal", "axis": null},
+      "y": {"field": "animal", "type": "nominal", "axis": null, "sort": null},
+      "text": {"field": "emoji", "type": "nominal"},
+      "size": {"value": 90},
+      "tooltip":[
+        {"field":"animal", "title":"Engagement in Work/and Study"}
+      ]
+    },
+    "config": {
+        "background":"#fce6ce",
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        },
+        "axis": {"grid": false},
+        "font": "Goudy Old Style"
+      }
+  }
+  

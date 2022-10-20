@@ -1,35 +1,38 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple donut chart with embedded data.",
-  "title": "Main Reason for Participating In Formal Study (2021)",
   "width": 500,
   "height":300,
   "data": {
     "url": "https://raw.githubusercontent.com/arethasantosa/Assignment-2/main/Main%20reason%20for%20participating%20in%20formal%20study%20over%20the%20past%2012%20months(a).csv"
   },
   "layer": [{
-  "mark": {"type": "arc", "innerRadius": 50},
+  "mark": {"type": "arc", "innerRadius": 100},
   "encoding": {
     "theta": {"field": "Persons", "type": "quantitative"},
     "color": {"field": "Reason", "type": "nominal", "scale":{
         "domain": ["Increase job skills", "Increase job prospects","Personal development","Other"],
-        "range": ["#EAAC34","#EA3437","#E7DA47","#D7C9A8"]
-    }},
+        "range": ["#FF9AA2","#C7CEEA","#B5EAD7","#E2F0CB"]
+    }, "legend": null},
     "tooltip":[{"field":"Reason", "type": "nominal", "title":"Reason"},
     {"field":"Persons","type":"quantitative","title":"Number of Person (%) "}]
   }
 },
   {
-      "mark": {"type": "text", "radius": "100","align": "left","dy": 50, "dx": 37, "baseline": "middle","fontWeight": "bolder","fontSize": 15,"fill":"#3B0DBDD"},
+      "mark": {"type": "text", "radius": "100","align":"center","dy": 100, "dx": 4, "baseline": "middle","fontWeight": "bolder","fontSize": 26},
       "encoding": {
-          "text": {"value" : "48.8%", "type": "quantitative"}
+          "text": {"value" : "Main Reasons", "type": "quantitative"}
       }
 }
-  ],"config": {
-    "background":"#c2b8c1",
-    "style": {
-      "cell": {
-        "stroke": "transparent"
+  ], "config": {
+        "background":"#fce6ce",
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        },
+        "axis": {"grid": false},
+        "font": "Goudy Old Style"
       }
-    }
-  }}
+  
+  }

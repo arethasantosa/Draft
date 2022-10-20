@@ -1,0 +1,94 @@
+body *{
+    font-family: 'American Typewriter', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+
+.page {
+    width: 700px;
+    border-radius: 15px;
+    background-color: rgb(255, 209, 160);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 50px;
+    padding-top: 35px;
+}
+
+.vis-container {
+    width: 100%;
+    margin-left: 100px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.vis-container2 {
+    width: 100%;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+.description h2,
+h1 {
+    margin-top: 0px;
+}
+
+.description-right {
+    padding-left: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fce6ce;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.description-left {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.pure-g {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fce6ce;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.small-font {
+    font-size: 14px;
+}
+
+.center{
+    display: block;
+    margin-left: 100px;
+}
+
+.bigger { font-size: 105%;
+font-weight: 800;}
+
+.thicker{
+    font-weight: 900;
+    font-size: 105%;
+}
+
+.absolute {
+    position: relative;
+    top: -35px;
+    left: 15px;
+    width: 60px;
+    height: 210px;
+}
+
+.text{
+    position: relative;
+
+    font-size: 120%;
+    text-align: centre;
+    top: -170px;
+    right: 45px;
+    width: 120px;
+    height: 60px;
+}

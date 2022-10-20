@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Number of Student by Enrolment",
+  "title": "Number of Student by Enrolment (2019)",
   "width": 500,
   "height":300,
   "params": [
@@ -23,6 +23,7 @@
       ],
       "projection": {"type": "equirectangular"},
       "layer": [
+
         {
           "data": {
             "url": "https://raw.githubusercontent.com/arethasantosa/Assignment-2/main/Student%20enrolment%20by%20state.csv"
@@ -44,13 +45,15 @@
             },
             {"filter": "datum.School == School_selection"}
           ],
-          "mark": {"type": "geoshape", "stroke": "#64473C", "strokeWidth": 0.5},
+          "mark": {"type": "geoshape", "stroke": "#2b1c16", "strokeWidth": 0.5},
           "encoding": {
             "shape": {"field": "geo", "type": "geojson"},
             "color": {
               "field": "Student",
               "type": "quantitative",
-              "scale": {"scheme": "Reds"}},
+              "scale": {"range": ["#FFE5B4","#fbbe84", "#fda185", "#FF6347", "#C34A2C"]},
+              "title": ["Number of","Student"]
+              },
           "tooltip": [
             {"field": "States", "type": "nominal", "title": "State"},
             {"field": "Student", "type": "quantitative", "title": "Total number of student"}
@@ -58,11 +61,13 @@
       }}
     ],
    "config": {
-        "background":"#D4E1EE",
+        "background":"#fce6ce",
         "style": {
           "cell": {
             "stroke": "transparent"
           }
-        }
+        },
+        "axis": {"grid": false},
+        "font": "Goudy Old Style"
       }
   }

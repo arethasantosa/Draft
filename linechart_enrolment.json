@@ -14,20 +14,10 @@
       "labels": ["Show All", "Catholic", "Government", "Independent"],
       "name": "Type of School: "
     }
-  },
-  {
-    "name": "Year_selection",
-    "bind": {
-      "input": "select",
-      "options": [null, "2017", "2018", "2019", "2020","2021"],
-      "labels": ["Show All","2017", "2018", "2019", "2020","2021" ],
-      "name": "Year: "
-    }
   }
 ],
 "transform": [
-    {"filter": "School_selection == null || datum.School == School_selection"},
-    {"filter": "Year_selection == null || datum.Year == Year_selection"}
+    {"filter": "School_selection == null || datum.School == School_selection"}
 ],
   "mark": {
     "type": "line",
@@ -44,14 +34,17 @@
     "color": {"field": "School","scale": { 
         "domain": ["Catholic", "Government", "Independent"],
         "range": ["#F04E47", "#F08247", "#F0B547"]
-    }
+    },
+    "legend": null
   }
 },"config": {
-    "background":"#D4E1EE",
-    "style": {
-      "cell": {
-        "stroke": "transparent"
+        "background":"#fce6ce",
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        },
+        "axis": {"grid": false},
+        "font": "Goudy Old Style"
       }
-    }
-  }
 }
