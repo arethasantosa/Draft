@@ -1,8 +1,8 @@
 
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": "container",
-    "height": 185,
+    "width": 500,
+    "height": 300,
     "title": "Engagement in Young Australians",
     "data": {
       "values": [

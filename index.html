@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Multiple Visualisations | An Example</title>
+  <title> Education In Australia | Vizualisation Tool</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -19,25 +19,77 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+  <meta charset="UTF-8">
 
   <style>
-    body {
-      background-color: lightgrey;
-    }
-    
+
     h1 {
-      color: coral;
       text-align: center;
       text-decoration: underline;
-      font-family: 'Gill-sans';
-      font-size: x-large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 50px;
+      font-weight: 900;
     }
 
     h2 {
-      color: lightcoral;
+      color: rgb(255, 200, 171);
       text-align: left;
     }
+
+    .page {
+    width: 900px;
+    border-radius: 15px;
+    background-color: #ffd5a8;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 50px;
+    padding-top: 35px;
+  }
+
+  .vis-container {
+    width: 80%;
+    margin-left: 250px;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+  .vis-container2 {
+    width: 80%;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .center{
+    display: block;
+    margin-left: 100px;
+}
+
+.bigger { font-size: 105%;
+font-weight: 800;}
+
+.thicker{
+    font-weight: 900;
+    font-size: 105%;
+}
+
+.absolute {
+    position: relative;
+    top: -35px;
+    left: 15px;
+    width: 60px;
+    height: 210px;
+}
+
+.text{
+    position: relative;
+
+    font-size: 120%;
+    text-align: centre;
+    top: -170px;
+    right: 45px;
+    width: 120px;
+    height: 60px;
+}
 
     </style>
 </head> 
@@ -49,98 +101,130 @@
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <div class="description description-centre"></div>
-        <h1>EDUCATION AND WORK IN AUSTRALIA</h1>
-        <p style="color: #FF7A59"; text-align: center; class ="description description-centre"></p>Education contributes to Australia's prosperity and social wellbeing.<br>
-          Education are closely related with employment and workplace relations 
-            that support individuals, <br>businesses and nation to prosper. </p>
+          <h1>EDUCATION IN AUSTRALIA</h1>
       </div>
-    </div>
-    <!-- end pure grid group -->
-
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-2">
-        <div class="description description-left">
-          <h2>Number of Student Enrolled In Australia (2021)</h2>
-          <p>This is the first paragraph for the first visualization. 
-            Mentioned about the highest and the lowest number of student, 
-            correlated with how big the territory and divided into two type of school 
-            which are government and non-government school. </p>
+      <div class ="pure-u-1-2">
+        <div style="padding-left:100px">
+        <p style="color: #FF7A59"; text-align: center; class ="description description-centre"></p>Education contributes to Australia's prosperity and social wellbeing.
+        Education are closely related with employment and workplace relations 
+          that support individuals, businesses and nation to prosper. </p>
         </div>
       </div>
+      </div>
       <div class="pure-u-1-2">
-        <div id="vis1" class="vis-container"></div>
+        <div style="padding-left:50px">
+          <p>this tool provides visualisations to examine closely <span class= "thicker">how education in Australia has developed</span> in the past <span class="thicker">10 year</span></p>
+        </div>
       </div>
     </div>
-    <!-- end pure grid group -->
-
-   <!-- pure grid group -->
-        <div class="pure-g">
-          <div class="pure-u-1-2">
-            <div class="description description-left">
-              <h2>Grouped Bar Chart</h2>
-              <p>This is the first paragraph for the first visualization. 
-                Mentioned about the highest and the lowest number of student, 
-                correlated with how big the territory and divided into two type of school 
-                which are government and non-government school. </p>
-            </div>
-          </div>
-          <div class="pure-u-1-2">
-            <div id="vis2" class="vis-container"></div>
-          </div>
-        </div>
     <!-- end pure grid group -->
 
   <!-- pure grid group -->
-     <div class="pure-g">
-      <div class="pure-u-1-2">
-        <div id="vis3" class="vis-container"></div>
-      </div>
-
-      <div class="pure-u-1-2">
-        <div class="description description-left">
-          <h2>Line Chart</h2>
-          <p>This is the first paragraph for the first visualization. 
-            Mentioned about the highest and the lowest number of student, 
-            correlated with how big the territory and divided into two type of school 
-            which are government and non-government school. </p>
-        </div>
-      </div>
-      
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+        <h2>Why Study?</h2>
     </div>
+      <div class="pure-u-3-5">
+        <div class="description-left" style ="margin-right: 50px">
+        <p>There are many reasons people want to study. Based on survey in 2019, <br>
+          there are 3 main reason people want to engage in education. <br>
+          The reason are people want to
+          <b style="color: #C7CEEA" class="bigger">increase job prospects</b>,  
+          <b style="color: #FF9AA2" class="bigger">increase job skills</b>, 
+          <b style="color: #B5EAD7" class="bigger"> personal development</b> 
+          and <b style="color: #E2F0CB" class="bigger">other</b> reason. <br>
+          Almost half want to increase job prospects. By getting a good job, <br>
+          people can be financially stable and fulfill the basic needs in life. </p>
+      </div>
+    </div>
+    <div class="pure-u-1-5">
+      <div id="vis1" style="margin-top: -30px; margin-left: -90px;"></div>
+    </div>
+  </div>
 <!-- end pure grid group -->
 
 <!-- pure grid group -->
   <div class="pure-g">
     <div class="pure-u-1-2">
-      <div class="description description-left">
-        <h2>Why Study?</h2>
-        <p>There are four main reason people want to study. Most people want to increase job prospects </p>
-      </div>
-    </div>
-    <div class="pure-u-1-2">
-      <div id="vis4" class="vis-container"></div>
-    </div>
-  </div>
-<!-- end pure grid group -->
-
-  <!-- pure grid group -->
-  <div class="pure-g">
-    <div class="pure-u-1-2">
-      <div class="description description-left">
+      <div class="description-centre" style = "margin-left: 200px;">
         <h2>How Many Student In Australia?</h2>
-        <p>The total number of student in Australia are variative. 
-          Highly correlated with number of population. NSW has the highest number of student followed by VIC, 
-          on the other spectrum Northern Territory has the smallest. </p>
+        <p><i> The choropleth maps below show how states in Australia differ in number of student</p></i>
+        <div id="vis1" style="margin-left: 200px"></div>
       </div>
     </div>
-    <div class="pure-u-1-2">
-      <div id="vis5" class="vis-container"></div>
+    <div class="pure-u-1-1">
+      <div id="vis2" class="centre" style = "margin-left: 50px;" ></div>
     </div>
   </div>
 <!-- end pure grid group -->
 
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+          <h2>Which School Are You In?</h2>
+          <p>There are 3 type of school, 
+            <b style="color: #F04E47" class="bigger">Catholic</b>,
+            <b style="color: #F08247" class="bigger">Government</b> and 
+            <b style="color: #F0B547" class="bigger">Independent</b>. <br>
+            Majority of students in Australia engage in <b style="color: #F08247" class="bigger">Government</b> based school. 
+            Nonetheless, the number of student whos enrol in government based type decrease in 2021. <br>
+            Overall, the number of student <span class="thicker"> INCREASE</span> for the past five year.
+           </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis3" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <div class="description description-centre">
+        <h2>Government vs Non-Goverment</h2>
+        <p><i> The choropleth maps below show how states in Australia differ in number of student whos engage in government based school and non-government based school.</p></i>
+      </div>
+    </div>
+    <div class="pure-u-1-1">
+      <div id="vis4" class="vis-container2"></div>
+    </div>
+  </div>
+<!-- end pure grid group -->
+
+<div class="pure-g">
+  <div class="pure-u-1-1">
+    <div class="description description-centre">
+      <h2>Gender</h2>
+      <p></p>
+    </div>
+  </div>
+  <div class="pure-u-1-1">
+    <div id="vis5" class="centre"></div>
+  </div>
+</div>
+<!-- end pure grid group -->
+
+
+
+   <!-- pure grid group -->
+        <div class="pure-g">
+          <div class="pure-u-1-3">
+            <div id="vis6" class="vis-container2"></div>
+          </div>
+        </div>
+        <div class="pure-u-1-3">
+        <div class="description description-middle">
+            <p>Both Females and Males mostly engage in study in their early 15-24 years old.</p>
+            <p><span class="thicker"> 9 out 10 </span> young australians actively engage in study and or work.</p>
+        </div>
+      </div>
+          <div class="pure-u-1-3">
+            <div id="vis7" class="vis-container2"></div>
+          </div>
+        </div>
+    <!-- end pure grid group -->
 
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
@@ -152,11 +236,13 @@
   </div> <!-- end page -->
 
   <script type="text/javascript">
-    var specVis1 = "./mapau.json";
-    var specVis2 = "./grouped_bar_chart.json";
+    var specVis1 = "./Donutchart.json";
+    var specVis2 = "./mapau2.json";
     var specVis3 = "./linechart_enrolment.json";
-    var specVis4 = "./Donutchart.json";
-    var specVis5 = "./bubble_chart.json";
+    var specVis4 = "./mapau.json";
+    var specVis5 = "./gender.json";
+    var specVis6 = "./grouped_bar_chart.json";
+    var specVis7 = "./ratio.json";
 
 
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
@@ -176,6 +262,14 @@
     }).catch(console.error);
 
     vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis7', specVis7, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
