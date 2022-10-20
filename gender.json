@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/arethasantosa/Draft/main/current_study_gender.csv"},
+  "autosize": {"contains": "padding"},
+  "hconcat": [{"width": 300,
+  "height": 300,
+      "mark": {"type": "line", "strokeWidth": 3, "strokeCap": "round"},
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Value",
+          "type": "ordinal",
+          "axis": {"format": ".3s"},
+          "title": "Total People",
+          "sort": "descending"
+        },
+        "color":{"field":"Gender", "scale": {
+          "domain": ["Male", "Female"],
+          "range": ["#5dbbc9", "#e6959c"]
+        },
+        "legend": null}
+      }
+    },
+    {"width": 300,
+    "height": 300,
+    "view": {"stroke": null},
+    "mark": {
+    "type": "area", "line": {"color": "skyblue"}},
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "Year",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Percentage",
+          "type": "quantitative",
+          "title": "Total People (%)",
+          "scale": {"domain": [35,40]}
+      }, "color": {"value": "#ff8900"}
+          
+      }
+    }
+      
+  ],
+  "config": {
+      "background":"#fce6ce",
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      },
+      "axis": {"grid": false},
+      "font": "Goudy Old Style"
+    }
+}
