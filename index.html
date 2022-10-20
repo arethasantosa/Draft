@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 
   <meta charset="UTF-8">
 
@@ -34,14 +34,17 @@
     }
 
     h2 {
-      color: rgb(255, 200, 171);
+      color: rgb(49, 58, 66);
       text-align: center;
     }
+
+    body {
+    background-image: url("school.jpg");
+    background-repeat: repeat;}
 
     .page {
     width: 900px;
     border-radius: 15px;
-    background-color: #ffd5a8;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -60,9 +63,36 @@
     
   }
   .center{
+    margin: auto;
     display: block;
     text-align: center;
 }
+
+.pure-g {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: "#fce6ce";
+    font-family: 'Poppins', sans-serif;
+}
+
+  .description-right {
+    padding-left: 50 px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #f8ffec;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .description-left {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .description h2,
+  h1 {
+    margin-top: 0px;
+  }
 
 .bigger { font-size: 105%;
 font-weight: 800;}
@@ -72,15 +102,7 @@ font-weight: 800;}
     font-size: 105%;
 }
 
-.absolute {
-    position: relative;
-    top: -35px;
-    left: 15px;
-    width: 60px;
-    height: 210px;
-}
-
-.text{
+.p{
     position: relative;
     font-size: 120%;
     text-align: center;
@@ -90,141 +112,128 @@ font-weight: 800;}
     height: 60px;
 }
 
-    </style>
+</style>
 </head> 
 
 <body>
 
   <div class="page">
-
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-1">
-          <h1>EDUCATION IN AUSTRALIA</h1>
-      </div>
-      <div class ="pure-u-1-2">
-        <div style="padding-left:100px">
-        <p style="color: #FF7A59"; text-align: center; class ="description description-centre"></p>Education contributes to Australia's prosperity and social wellbeing.
-        Education are closely related with employment and workplace relations 
-          that support individuals, businesses and nation to prosper. </p>
+  
+  <!-- pure grid group -->
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h1 style="background-color:#fce6ce;">EDUCATION IN AUSTRALIA</h1>
+        </div>
+        <div class ="pure-u-1-2">
+          <div style="padding-left:100px">
+          <p style= "text-align: center"></p>Education contributes to Australia's prosperity and social wellbeing.
+          Education are closely related with employment and workplace relations 
+            that support individuals, businesses and nation to prosper. </p>
+          </div>
+        </div>
+        </div>
+        <div class="pure-u-1-2">
+            <p style="text-align: center;">this tool provides visualisations to examine closely <span class= "thicker">how education in Australia has developed</span> in the past <span class="thicker">10 year</span></p>
+          </div>
         </div>
       </div>
-      </div>
-      <div class="pure-u-1-2">
-        <div style="padding-left:50px">
-          <p>this tool provides visualisations to examine closely <span class= "thicker">how education in Australia has developed</span> in the past <span class="thicker">10 year</span></p>
-        </div>
-      </div>
-    </div>
-    <!-- end pure grid group -->
+  <!-- end pure grid group -->
 
   <!-- pure grid group -->
   <div class="pure-g">
     <div class="pure-u-1-1">
+      <div style="padding-left:100px"></div>
         <h2>Why Study?</h2>
     </div>
       <div class="pure-u-3-5">
-        <div class="description-left" style ="margin-right: 50px">
+        <div class="description-left" style="text-align:justify";>
         <p>There are many reasons people want to study. Based on survey in 2019, <br>
           there are 3 main reason people want to engage in education. <br>
           The reason are people want to
           <b style="color: #C7CEEA" class="bigger">increase job prospects</b>,  
-          <b style="color: #FF9AA2" class="bigger">increase job skills</b>, 
+          <b style="color: #FF9AA2" class="bigger">increase job skills</b>, <br>
           <b style="color: #B5EAD7" class="bigger"> personal development</b> 
-          and <b style="color: #E2F0CB" class="bigger">other</b> reason. <br>
-          Almost half want to increase job prospects. By getting a good job, <br>
+          and <b style="color: #E2F0CB" class="bigger">other</b> reason.
+          Almost half want to increase job prospects. <br>
+          By getting a good job,
           people can be financially stable and fulfill the basic needs in life. </p>
       </div>
     </div>
-    <div class="pure-u-1-5">
-      <div id="vis1" style="margin-top: -30px; margin-left: -90px;"></div>
+    <div class="pure-u-1-5" style ="margin-top: 25px; margin-left: -90px;">
+      <div id="vis1"></div>
     </div>
   </div>
 <!-- end pure grid group -->
 
 <!-- pure grid group -->
   <div class="pure-g">
-    <div class="pure-u-1-2">
+    <div class="pure-u-1-1">
       <div class="description-centre">
         <h2>How Many Student In Australia?</h2>
         <p style="text-align:center"><i> The choropleth maps below show how states in Australia differ in number of student</p></i>
-        <div id="vis1" style="margin-left: 200px"></div>
       </div>
     </div>
-    <div class="pure-u-1-1">
-      <div id="vis2" class="center" style = "margin-left: 50px;" ></div>
+    <div class="center">
+      <div id="vis2"></div>
     </div>
   </div>
 <!-- end pure grid group -->
 
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-2">
-          <h2>Which School Are You In?</h2>
-          <p>There are 3 type of school, 
-            <b style="color: #F04E47" class="bigger">Catholic</b>,
-            <b style="color: #F08247" class="bigger">Government</b> and 
-            <b style="color: #F0B547" class="bigger">Independent</b>. <br>
-            Majority of students in Australia engage in <b style="color: #F08247" class="bigger">Government</b> based school. 
-            Nonetheless, the number of student whos enrol in government based type decrease in 2021. <br>
-            Overall, the number of student <span class="thicker"> INCREASE</span> for the past five year.
-           </p>
-        </div>
-      </div>
-      <div class="pure-u-1-2">
-        <div id="vis3" class="vis-container"></div>
-      </div>
-    </div>
-    <!-- end pure grid group -->
-
-    <!-- pure grid group -->
-  <div class="pure-g">
-    <div class="pure-u-1-1">
-        <h2>Government vs Non-Goverment</h2>
-        <p><i> The choropleth maps below show how states in Australia differ in number of student whos engage in government based school and non-government based school.</p></i>
-      </div>
-    </div>
-    <div class="pure-u-1-1" >
-      <div id="vis4" class="vis-container2"></div>
-    </div>
-  </div>
-<!-- end pure grid group -->
-
-<div class="pure-g">
-  <div class="pure-u-1-1">
-      <h2>Gender</h2>
-      <p></p>
-    </div>
-  </div>
-  <div class="pure-u-1-1">
-    <div id="vis5" class="centre"></div>
-  </div>
-</div>
-<!-- end pure grid group -->
-
-<!-- end pure grid group -->
-
-<div class="pure-g">
-  <div class="pure-u-1-3">
-    <div id="vis6" class="vis-container">
-    </div>
-  </div>
-  <div class="pure-u-1-3">
-  <div class="description description-center">
-    <p>Both Females and Males mostly engage in study in their early 15-24 years old.</p>
-            <p><span class="thicker"> 9 out 10 </span> young australians actively engage in study and or work.</p>
-</div>
-</div>
-<div class="pure-u-1-3">
-  <div id="vis7" class="center">
-  </div>
-  </p>
-</div>
-</div>
 
 <!-- pure grid group -->
+<div class="pure-g">
+  <div class="pure-u-1-1">
+      <h2>Which School Are You In?</h2>
+  </div>
+    <div class="pure-u-3-5">
+      <div class="description-left" style ="margin-left: 50px; margin-top: 50px; text-align: justify";>
+        <p style="text-align: left">There are 3 type of school, 
+          <b style="color: #F04E47" class="bigger">Catholic</b>,
+          <b style="color: #F08247" class="bigger">Government</b> and 
+          <b style="color: #F0B547" class="bigger">Independent</b>. <br>
+          Majority of students in Australia engage in <b style="color: #F08247" class="bigger">Government</b> based school. <br>
+          Nonetheless, the number of student whos enrol in government based type decrease in 2021. <br>
+          Overall, the number of student <span class="thicker"> INCREASE</span> for the past five year.
+         </p>
+    </div>
+  </div>
+  <div class="pure-u-1-5" style ="margin-top: 25px; margin-left: -90px;">
+    <div id="vis3"></div>
+  </div>
+</div>
+<!-- end pure grid group -->
+
+<!-- pure grid group -->
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <div class="description-centre">
+        <h2>Government vs Non-Goverment</h2>
+        <p style="text-align:center"><i> The choropleth maps below show how states in Australia differ in number of student <br>
+          whos engage in government based school and non-government based school.</p></i>
+      </div>
+    </div>
+    <div class="center">
+      <div id="vis4"></div>
+    </div>
+  </div>
+<!-- end pure grid group -->
+
+<!-- pure grid group -->
+<div class="pure-g">
+  <div class="pure-u-1-1"; class="center", style="margin-left: 8cm" >
+    <div id="vis5"></div>
+  </div>
+<!-- end pure grid group -->
+
+<!-- pure grid group -->
+<div class="pure-g">
+  <div class="pure-u-1-1"; class="center">
+    <div id="vis6"></div>
+  </div>
+<!-- end pure grid group -->
 
 
+<!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
         <p>This visualisation is created by Aretha Sheridan Santosa </href>.</p>

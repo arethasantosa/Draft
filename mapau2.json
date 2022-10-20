@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Normalised Number of Student by State",
-    "width": 500,
+    "width": 600,
     "height":300,
         "params": [
           {

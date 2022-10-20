@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
     "url": "https://raw.githubusercontent.com/arethasantosa/Draft/main/current_study_gender.csv"},
-  "autosize": {"contains": "padding"},
   "hconcat": [{"width": 300,
   "height": 300,
       "mark": {"type": "line", "strokeWidth": 3, "strokeCap": "round"},
