@@ -19,21 +19,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="style.css" media="all">
+  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
 
   <meta charset="UTF-8">
 
-  <style>
-
-    h1 {
-      text-align: center;
-      text-decoration: underline;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 50px;
-      font-weight: 900;
-    }
-
-</style>
 </head> 
 
 <body>
@@ -43,30 +32,25 @@
   <!-- pure grid group -->
       <div class="pure-g">
         <div class="pure-u-1-1">
-            <h1 style="background-color:#fce6ce;">EDUCATION IN AUSTRALIA</h1>
-        </div>
-        <div class ="pure-u-1-2">
-          <div style="padding-left:100px">
-          <p style= "text-align: center"></p>Education contributes to Australia's prosperity and social wellbeing.
-          Education are closely related with employment and workplace relations 
-            that support individuals, businesses and nation to prosper. </p>
+            <h1 style="text-align: center;">EDUCATION IN AUSTRALIA</h1>
+          <p id = justify></p>A story visualisation full of insights and exploration of education development in Australia. </p>
           </div>
         </div>
-        </div>
-        <div class="pure-u-1-2">
-            <p style="text-align: center;">this tool provides visualisations to examine closely <span class= "thicker">how education in Australia has developed</span> in the past <span class="thicker">10 year</span></p>
-          </div>
-        </div>
-      </div>
   <!-- end pure grid group -->
+
+   <!-- pure grid group -->
+   <div class="pure-g2">
+    <p2 style="text-align:center">Education contributes to Australia's prosperity and social wellbeing. <br> Education support individuals, business, and nation to prosper. <br>
+     </p2>
+  </div>
+    <!-- end pure grid group -->
 
   <!-- pure grid group -->
   <div class="pure-g">
     <div class="pure-u-1-1">
-      <div style="padding-left:100px"></div>
-        <h2>Why Study?</h2>
+        <h2 class="description-left">Why Study?</h2>
     </div>
-      <div class="pure-u-3-5">
+      <div class="pure-u-2-5">
         <div class="description-left" style="text-align:justify";>
         <p>There are many reasons people want to study. Based on survey in 2019, <br>
           there are 3 main reason people want to engage in education. <br>
@@ -80,8 +64,8 @@
           people can be financially stable and fulfill the basic needs in life. </p>
       </div>
     </div>
-    <div class="pure-u-1-5" style ="margin-top: 25px; margin-left: -90px;">
-      <div id="vis1"></div>
+    <div class="pure-u-1-5">
+      <div id="vis1" class="vis-container2" style="margin-left: -25px; margin-bottom: 20px;"></div>
     </div>
   </div>
 <!-- end pure grid group -->
@@ -90,12 +74,12 @@
   <div class="pure-g">
     <div class="pure-u-1-1">
       <div class="description-centre">
-        <h2>How Many Student In Australia?</h2>
+        <h2 style="text-align: center;">How Many Student In Australia?</h2>
         <p style="text-align:center"><i> The choropleth maps below show how states in Australia differ in number of student</p></i>
       </div>
     </div>
     <div class="center">
-      <div id="vis2"></div>
+      <div id="vis2" class="vis-container-map"></div>
     </div>
   </div>
 <!-- end pure grid group -->
@@ -104,39 +88,39 @@
 <!-- pure grid group -->
 <div class="pure-g">
   <div class="pure-u-1-1">
-      <h2>Which School Are You In?</h2>
+      <h2 style="text-align: center">Which School Are You In?</h2>
   </div>
-    <div class="pure-u-3-5">
-      <div class="description-left" style ="margin-left: 50px; margin-top: 50px; text-align: justify";>
+    <div class="pure-u-2-5">
+      <div class="description-left" style ="text-align: justify";>
         <p style="text-align: left">There are 3 type of school, 
           <b style="color: #F04E47" class="bigger">Catholic</b>,
           <b style="color: #F08247" class="bigger">Government</b> and 
-          <b style="color: #F0B547" class="bigger">Independent</b>. <br>
-          Majority of students in Australia engage in <b style="color: #F08247" class="bigger">Government</b> based school. <br>
-          Nonetheless, the number of student whos enrol in government based type decrease in 2021. <br>
+          <b style="color: #F0B547" class="bigger">Independent</b>.
+          Majority of students in Australia engage in <b style="color: #F08247" class="bigger">Government</b> based school.
+          Nonetheless, the number of student whos enrol in government based type decrease in 2021.
           Overall, the number of student <span class="thicker"> INCREASE</span> for the past five year.
          </p>
     </div>
   </div>
-  <div class="pure-u-1-5" style ="margin-top: 25px; margin-left: -90px;">
+  <div class="pure-u-1-5" style ="margin-top: 10px; margin-left: -40px;">
     <div id="vis3"></div>
   </div>
 </div>
 <!-- end pure grid group -->
 
 <!-- pure grid group -->
-  <div class="pure-g">
-    <div class="pure-u-1-1">
-      <div class="description-centre">
-        <h2>Government vs Non-Goverment</h2>
-        <p style="text-align:center"><i> The choropleth maps below show how states in Australia differ in number of student <br>
-          whos engage in government based school and non-government based school.</p></i>
-      </div>
-    </div>
-    <div class="center">
-      <div id="vis4"></div>
+<div class="pure-g">
+  <div class="pure-u-1-1">
+    <div class="description-centre">
+      <h2 style="text-align: center;">Australian Government Contribution To Education</h2>
+      <p style="text-align:center"><i> The choropleth maps below show how states in Australia differ in number of student <br>
+        whos engage in government based school and non-government based school.</p></i>
     </div>
   </div>
+  <div class="center">
+    <div id="vis4" class="vis-container-map"></div>
+  </div>
+</div>
 <!-- end pure grid group -->
 
 <!-- pure grid group -->

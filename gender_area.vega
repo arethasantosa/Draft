@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/arethasantosa/Draft/main/current_study_gender.csv"},
+      "height": 300,
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "Year",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Value",
+          "type": "ordinal",
+          "axis": {"format": ".3s"},
+          "title": "Total People",
+          "sort": "descending",
+          "stack": "normalize"
+        },
+        "tooltip": [{"field": "Year", "type": "temporal"},{"field": "Value", "type": "ordinal", "title": "Number of People"} ],
+        "color":{"field":"Gender", "scale": {
+          "domain": ["Male", "Female"],
+          "range": ["#5dbbc9", "#e6959c"]
+        },
+        "legend": null}
+      }}
