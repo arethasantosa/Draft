@@ -1,50 +1,48 @@
-﻿State,Institution,Domestic,Overseas,Total,,,
-New South Wales,Charles Sturt University,"35,811",7521,"43,332",,,
-New South Wales,Macquarie University,"33,863",10966,"44,829",,,
-New South Wales,Southern Cross University,"15,825",4073,"19,898",,,
-New South Wales,The University of New England,"23,372",1460,"24,832",,,
-New South Wales,The University of Newcastle,"31,506",5374,"36,880",,,
-New South Wales,The University of Sydney,"40,495",32090,"72,585",,,
-New South Wales,University of New South Wales,"40,121",23107,"63,228",,,
-New South Wales,University of Technology Sydney,"32,275",14042,"46,317",,,
-New South Wales,University of Wollongong,"19,536",13853,"33,389",,,
-New South Wales,Western Sydney University,"41,274",7911,"49,185",,,
-New South Wales,Non-University Higher Education Institutions,"39,009",29148,"68,157",,,
-Victoria,Deakin University,"49,583",14624,"64,207",,,
-Victoria,Federation University Australia(a),"8,166",8606,"16,772",,,
-Victoria,La Trobe University,"28,449",8698,"37,147",,,
-Victoria,Monash University,"45,485",40439,"85,924",,,
-Victoria,RMIT University,"41,301",33298,"74,599",,,
-Victoria,Swinburne University of Technology,"31,988",9874,"41,862",,,
-Victoria,The University of Melbourne,"42,688",27286,"69,974",,,
-Victoria,University of Divinity,"1,312",161,"1,473",,,
-Victoria,Victoria University,"17,271",11237,"28,508",,,
-Victoria,Non-University Higher Education Institutions,"6,919",25372,"32,291",,,
-Queensland,Bond University,"3,157",2418,"5,575",,,
-Queensland,CQUniversity,"19,818",5799,"25,617",,,
-Queensland,Griffith University,"41,433",8433,"49,866",,,
-Queensland,James Cook University,"13,804",5941,"19,745",,,
-Queensland,Queensland University of Technology,"44,211",8434,"52,645",,,
-Queensland,The University of Queensland,"34,575",20375,"54,950",,,
-Queensland,University of Southern Queensland,"23,037",2448,"25,485",,,
-Queensland,University of the Sunshine Coast,"15,654",2471,"18,125",,,
-Queensland,Non-University Higher Education Institutions,"7,151",1489,"8,640",,,
-Western Australia,Curtin University,"37,172",12830,"50,002",,,
-Western Australia,Edith Cowan University,"24,236",6618,"30,854",,,
-Western Australia,Murdoch University,"16,084",9307,"25,391",,,
-Western Australia,The University of Notre Dame Australia,"12,271",305,"12,674",,,
-Western Australia,The University of Western Australia,"19,026",5378,"24,404",,,
-Western Australia,Non-University Higher Education Institutions,"1,205",3613,"4,818",,,
-South Australia,Flinders University,"20,898",5038,"25,936",,,
-South Australia,The University of Adelaide,"20,230",9187,"29,417",,,
-South Australia,Torrens University Australia,"10,736",12618,"23,354",,,
-South Australia,University of South Australia,"30,988",6858,"37,846",,,
-South Australia,Private Universities (Table C) and Non-University Higher Education Institutions,"4,851",3429,"8,280",,,
-Tasmania,University of Tasmania,"34,050",7851,"41,901",,,
-Northern Territory,Batchelor Institute of Indigenous Tertiary Education,18,0,18,,,
-Northern Territory,Charles Darwin University,"11,670",2099,"13,769",,,
-Australian Capital Territory,The Australian National University,"15,470",8901,"24,371",,,
-Australian Capital Territory,University of Canberra,"12,715",3632,"16,347",,,
-Australian Capital Territory,Non-University Higher Education Institutions,"1,531",364,"1,895",,,
-,,,,,,,
-,,,,,,,
+﻿State,Institution,Domestic,Overseas,Total
+New South Wales,Charles Sturt University,"35,811",7521,"43,332"
+New South Wales,Macquarie University,"33,863",10966,"44,829"
+New South Wales,Southern Cross University,"15,825",4073,"19,898"
+New South Wales,The University of New England,"23,372",1460,"24,832"
+New South Wales,The University of Newcastle,"31,506",5374,"36,880"
+New South Wales,The University of Sydney,"40,495",32090,"72,585"
+New South Wales,University of New South Wales,"40,121",23107,"63,228"
+New South Wales,University of Technology Sydney,"32,275",14042,"46,317"
+New South Wales,University of Wollongong,"19,536",13853,"33,389"
+New South Wales,Western Sydney University,"41,274",7911,"49,185"
+New South Wales,Non-University Higher Education Institutions,"39,009",29148,"68,157"
+Victoria,Deakin University,"49,583",14624,"64,207"
+Victoria,Federation University Australia(a),"8,166",8606,"16,772"
+Victoria,La Trobe University,"28,449",8698,"37,147"
+Victoria,Monash University,"45,485",40439,"85,924"
+Victoria,RMIT University,"41,301",33298,"74,599"
+Victoria,Swinburne University of Technology,"31,988",9874,"41,862"
+Victoria,The University of Melbourne,"42,688",27286,"69,974"
+Victoria,University of Divinity,"1,312",161,"1,473"
+Victoria,Victoria University,"17,271",11237,"28,508"
+Victoria,Non-University Higher Education Institutions,"6,919",25372,"32,291"
+Queensland,Bond University,"3,157",2418,"5,575"
+Queensland,CQUniversity,"19,818",5799,"25,617"
+Queensland,Griffith University,"41,433",8433,"49,866"
+Queensland,James Cook University,"13,804",5941,"19,745"
+Queensland,Queensland University of Technology,"44,211",8434,"52,645"
+Queensland,The University of Queensland,"34,575",20375,"54,950"
+Queensland,University of Southern Queensland,"23,037",2448,"25,485"
+Queensland,University of the Sunshine Coast,"15,654",2471,"18,125"
+Queensland,Non-University Higher Education Institutions,"7,151",1489,"8,640"
+Western Australia,Curtin University,"37,172",12830,"50,002"
+Western Australia,Edith Cowan University,"24,236",6618,"30,854"
+Western Australia,Murdoch University,"16,084",9307,"25,391"
+Western Australia,The University of Notre Dame Australia,"12,271",305,"12,674"
+Western Australia,The University of Western Australia,"19,026",5378,"24,404"
+Western Australia,Non-University Higher Education Institutions,"1,205",3613,"4,818"
+South Australia,Flinders University,"20,898",5038,"25,936"
+South Australia,The University of Adelaide,"20,230",9187,"29,417"
+South Australia,Torrens University Australia,"10,736",12618,"23,354"
+South Australia,University of South Australia,"30,988",6858,"37,846"
+South Australia,Private Universities (Table C) and Non-University Higher Education Institutions,"4,851",3429,"8,280"
+Tasmania,University of Tasmania,"34,050",7851,"41,901"
+Northern Territory,Batchelor Institute of Indigenous Tertiary Education,18,0,18
+Northern Territory,Charles Darwin University,"11,670",2099,"13,769"
+Australian Capital Territory,The Australian National University,"15,470",8901,"24,371"
+Australian Capital Territory,University of Canberra,"12,715",3632,"16,347"
+Australian Capital Territory,Non-University Higher Education Institutions,"1,531",364,"1,895"
